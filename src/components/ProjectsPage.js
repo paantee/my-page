@@ -6,7 +6,7 @@ export const ProjectsPage = () => {
     return (
       <>
         <div>
-          TÄMÄ ON PROJEKTI SIVU
+          projektit sivu
         </div>
       </>
     )

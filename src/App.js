@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, HashRouter } from "react-router-dom";
-import { HomePage } from './components/HomePage';
+import { MyPage } from './components/MyPage';
 import { ProjectsPage } from './components/ProjectsPage';
 import { Approuter } from './Approuter';
 
@@ -9,10 +9,9 @@ function App() {
     <>
       <HashRouter>
         <Routes>
-          <Route path="/" element={<Approuter />}>
-            <Route index path="/home" element={<HomePage />} />
+          <Route path="/" element={<Approuter />}></Route>
+            <Route index path="/home" element={<MyPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
-          </Route>
         </Routes>
       </HashRouter>
     </>
