@@ -7,7 +7,7 @@ export const Approuter = () => {
   return (
     <>
       <HashRouter>
-      <NavigationBar/>
+        <NavigationBar/>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/projects" element={<ProjectsPage />} />
