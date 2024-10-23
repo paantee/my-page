@@ -9,7 +9,10 @@ export const NavigationBar = () => {
     <>
       <div id="navigationDiv">
         <AppBar position="static" color="transparent">
-          <Grid2 container spacing={3} style={{ marginRight: '80px', justifyContent: 'right', padding: '15px' }}>
+          <Grid2
+          container
+          spacing={3}
+          sx={{ marginRight: {xs: '0px', md: '80px'}, justifyContent: {xs: 'center', md: 'right'}, padding: '15px' }}>
             <Link to="/">
               <Button startIcon={<HomeIcon/>} size="large" variant="text" color="inherit">
                 <p>HOME</p>
