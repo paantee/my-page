@@ -3,8 +3,9 @@ import skyPicture1 from './photos/sky1.jpg';
 import skyPicture2 from './photos/sky2.jpg';
 import { Link } from "react-router-dom";
 import { handleRedirect } from "./Utils";
+import transition from "./Transition";
 
-export const ProjectsPage = () => {
+const ProjectsPage = () => {
 
   const projectsList = [
     {name: 'Solita Warehouse', description: 'example desc', link: 'https://github.com/Solita-Warehouse/solita-warehouse', picture: skyPicture1},
@@ -45,3 +46,5 @@ export const ProjectsPage = () => {
     </>
   )
 }
+
+export default transition(ProjectsPage);

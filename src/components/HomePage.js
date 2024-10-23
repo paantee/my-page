@@ -1,10 +1,12 @@
 import { Avatar, Button, Grid2 } from "@mui/material"
+
 import profilePicture from './photos/patrick_high.png';
 import linkedinLogo from './photos/linkedin_round.jpg';
 import instagramLogo from './photos/instagram_logo.jpg';
 import { handleRedirect } from "./Utils";
+import transition from "./Transition";
 
-export const HomePage = () => {
+const HomePage = () => {
 
   return (
     <>
@@ -66,3 +68,5 @@ export const HomePage = () => {
     </>
   )
 }
+
+export default transition(HomePage);
