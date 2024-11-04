@@ -1,10 +1,9 @@
 import { Avatar, Button, Grid2 } from "@mui/material"
-
+import { handleRedirect } from "./Utils";
+import transition from "./Transition";
 import profilePicture from './photos/defaultAvatar.jpg';
 import linkedinLogo from './photos/linkedinRound.png';
 import instagramLogo from './photos/instagram_logo.jpg';
-import { handleRedirect } from "./Utils";
-import transition from "./Transition";
 
 const HomePage = () => {
 
@@ -48,6 +47,7 @@ const HomePage = () => {
             <div style={{ justifyItems: 'center' }}>
               <img
                 src={profilePicture}
+                alt="Profile Picture"
                 style={{ width: '100%', maxWidth: '400px', height: 'auto', borderRadius: '50%' }}
               />
             </div>

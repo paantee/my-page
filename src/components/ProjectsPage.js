@@ -1,11 +1,11 @@
 import { Card, CardActionArea, CardMedia, Grid2 } from "@mui/material";
+import { Link } from "react-router-dom";
+import { handleRedirect } from "./Utils";
+import transition from "./Transition";
 import skyPicture1 from './photos/sky1.jpg';
 import skyPicture2 from './photos/sky2.jpg';
 import skyPicture3 from './photos/sky3.jpg';
 import skyPicture4 from './photos/sky4.jpg';
-import { Link } from "react-router-dom";
-import { handleRedirect } from "./Utils";
-import transition from "./Transition";
 
 const ProjectsPage = () => {
 
@@ -18,7 +18,7 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <div id="projectsDiv" style={{paddingBottom: '40px'}}>
+      <div id="projectsDiv">
         <h1 style={{textAlign: 'center', fontSize: '50px'}}>Projects</h1>
         <Grid2
           container
@@ -32,13 +32,14 @@ const ProjectsPage = () => {
             >
               <CardActionArea>
                 <Link onClick={() => handleRedirect(project.link)}>
-                <CardMedia
-                component="img"
-                sx={{maxHeight: '150px'}}
-                image={project.picture}
-                alt="Random picture of the sky"/>
-                <p style={{ padding: '5px', color: 'rgb(233, 230, 230)' }}>Name: {project.name}</p>
-                <p style={{ padding: '5px', color: 'rgb(233, 230, 230)' }}>Description: {project.description}</p>
+                  <CardMedia
+                    component="img"
+                    sx={{maxHeight: '150px'}}
+                    image={project.picture}
+                    alt="Random picture of the sky"
+                  />
+                  <p style={{ padding: '5px', color: 'rgb(233, 230, 230)' }}>Name: {project.name}</p>
+                  <p style={{ padding: '5px', color: 'rgb(233, 230, 230)' }}>Description: {project.description}</p>
                 </Link>
               </CardActionArea>
             </Card>
