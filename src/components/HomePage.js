@@ -1,7 +1,7 @@
 import { Avatar, Button, Grid2 } from "@mui/material"
 
-import profilePicture from './photos/patrick_high.png';
-import linkedinLogo from './photos/linkedin_round.jpg';
+import profilePicture from './photos/defaultAvatar.jpg';
+import linkedinLogo from './photos/linkedinRound.png';
 import instagramLogo from './photos/instagram_logo.jpg';
 import { handleRedirect } from "./Utils";
 import transition from "./Transition";
@@ -28,12 +28,14 @@ const HomePage = () => {
               <Button onClick={() => handleRedirect('https://fi.linkedin.com/in/teemu-paananen-2a5b76258')}>
                 <Avatar
                   src={linkedinLogo}
+                  alt="Linkedins logo"
                   sx={{height: '50px', width: '50px'}}
                 />
               </Button>
-              <Button onClick={() => handleRedirect('https://fi.linkedin.com/in/teemu-paananen-2a5b76258')}>
+              <Button onClick={() => handleRedirect('https://www.instagram.com/paananenteemu/')}>
                 <Avatar
                   src={instagramLogo}
+                  alt="Instagrams logo"
                   sx={{height: '50px', width: '50px'}}
                 />
               </Button>
@@ -59,8 +61,8 @@ const HomePage = () => {
           >
             <div id="contactInformation">
               <h1 style={{paddingBottom: '5px'}}>Contact Me</h1>
-              <p style={{ color: 'grey' }}>Email Address: example@gmail.com</p>
-              <p style={{ color: 'grey' }}>Phone number: xxxxxxxxxxx</p>
+              <p style={{ color: 'grey' }}>Email Address: teemujuhanip@gmail.com</p>
+              <p style={{ color: 'grey' }}>Phone number: 00000000000</p>
             </div>
           </Grid2>
         </Grid2>
