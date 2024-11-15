@@ -5,6 +5,9 @@ import profilePicture from './photos/defaultAvatar.jpg';
 import linkedinLogo from './photos/linkedinRound.png';
 import instagramLogo from './photos/instagram_logo.jpg';
 
+const descText = `As a motivated young developer, I’m excited to be starting my journey in the tech industry. Currently, I’m gaining hands-on experience in software development at OP Financial Group.
+My passion lies in coding, continuous learning, and finding innovative solutions to complex problems. I’m eager to grow professionally and contribute to all kinds of projects.`
+
 const HomePage = () => {
 
   return (
@@ -13,14 +16,18 @@ const HomePage = () => {
         <Grid2 container>
           <Grid2
             size={{ xs: 12, md: 6 }}
-            sx={{ marginTop: { xs: '30px', md: '200px' }, marginRight: {xs: '30px', md: '0px'}, marginLeft: {xs: '30px', md: '0px'} }}
+            sx={{
+              marginTop: { xs: '30px', md: '200px' },
+              marginRight: {xs: '30px', md: '0px'},
+              marginLeft: {xs: '30px', md: '0px'}
+            }}
           >
             <div id="nameAndDesc" style={{ justifyItems: 'center' }}>
               <div style={{ maxWidth: '375px', minWidth: '300px' }}>
                 <h1 style={{ fontSize: '50px' }}>
                   Teemu Paananen
                 </h1>
-                <p style={{ paddingTop: '10px', paddingLeft: '5px' }}>The purple toaster on my desk has become my greatest confidant. Every morning, it hums softly, as if whispering secrets only I can understand. I once thought about naming it Gerald, but then I realized it's better to let it remain a mysterious, unnamed entity. Yesterday, a squirrel tried to steal my shoe, and I almost let it, just to see where it would take it. In an alternate universe, I imagine we’d have tea together and discuss the meaning of time. But here, I just keep making toast.</p>
+                <p style={{ paddingTop: '10px', paddingLeft: '5px' }}>{descText}</p>
               </div>
             </div>
             <div id="socialMediaBar" style={{ paddingTop: '15px', textAlign: 'center' }}>
@@ -57,12 +64,16 @@ const HomePage = () => {
         <Grid2 container>
           <Grid2
             size={12}
-            sx={{ marginLeft: {xs: '30px', md: '195px'}, marginTop: {xs: '30px', md: '60px'}, marginBottom: {xs: '30px', md: '0px'} }}
+            sx={{
+              marginLeft: {xs: '30px', md: '195px'}, 
+              marginTop: {xs: '30px', md: '60px'},
+              marginBottom: {xs: '30px', md: '0px'}
+            }}
           >
             <div id="contactInformation">
               <h1 style={{paddingBottom: '5px'}}>Contact Me</h1>
               <p style={{ color: 'grey' }}>Email Address: teemujuhanip@gmail.com</p>
-              <p style={{ color: 'grey' }}>Phone number: 00000000000</p>
+              <p style={{ color: 'grey' }}>Phone number: 0000000000</p>
             </div>
           </Grid2>
         </Grid2>
